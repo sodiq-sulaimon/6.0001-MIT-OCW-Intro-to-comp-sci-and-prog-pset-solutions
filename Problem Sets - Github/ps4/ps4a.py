@@ -1,5 +1,5 @@
 # Problem Set 4A
-# Name: <your name here>
+# Name: Sodiq Sulaimon
 # Collaborators:
 # Time Spent: x:xx
 
