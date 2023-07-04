@@ -110,7 +110,7 @@ class SubMessage(object):
                  another letter (string). 
         '''
         perms = {}
-
+        
         for letters in (VOWELS_LOWER, VOWELS_UPPER, CONSONANTS_LOWER, CONSONANTS_UPPER):
             i = 0
             for char in letters:
@@ -170,7 +170,23 @@ class EncryptedSubMessage(SubMessage):
         
         Hint: use your function from Part 4A
         '''
-        pass
+        decrypted_text = {}
+        
+        vowel_permutations = get_permutations(VOWELS_LOWER)
+        
+        for vowel_permutation in vowel_permutations:
+            transpose_dict = self.build_transpose_dict(vowel_permutation)
+            transpose = self.apply_transpose(transpose_dict)
+            
+            valid_word_count = 0
+            for word in transpose.split():
+                if is_word(self.valid_words, word):
+                    valid_word_count += 1
+                    decrypted_text[valid_word_count] = transpose
+        if max(decrypted_text) == 0:
+            return self.message_text
+        else:
+            return decrypted_text.get(max(decrypted_text))
 
 
 if __name__ == '__main__':
@@ -186,3 +202,12 @@ if __name__ == '__main__':
     print("Decrypted message:", enc_message.decrypt_message())
      
     #TODO: WRITE YOUR TEST CASES HERE
+    print("\n")
+    message = SubMessage("How is it going buddy?")
+    permutation = "oeaui"
+    enc_dict = message.build_transpose_dict(permutation)
+    print("Original message:", message.get_message_text(), "Permutation:", permutation)
+    print("Encryption:", message.apply_transpose(enc_dict))
+    enc_message = EncryptedSubMessage(message.apply_transpose(enc_dict))
+    print("Decrypted message:", enc_message.decrypt_message())
+    
