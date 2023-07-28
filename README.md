@@ -6,7 +6,7 @@ The programs are part of my efforts to build my skills in programming and comput
 
 A bit about the problem sets:
 
-Problem set 0 : This problem introduced me to the programming environment selected for the course, to programming in Python, as well as to the general problem set structure. In this problem set, I wrote a simple Python program that computes square and log base 2 of a number
+#Problem set 0# : This problem introduced me to the programming environment selected for the course, to programming in Python, as well as to the general problem set structure. In this problem set, I wrote a simple Python program that computes square and log base 2 of a number
 
 Problem set 1: In this problem set I learnt how to use control flow in Python and how to formulate a computational solution to a problem.  I also explored bisection search to write a program that calculates how long it would take to save up downpayment for a house.   
 
