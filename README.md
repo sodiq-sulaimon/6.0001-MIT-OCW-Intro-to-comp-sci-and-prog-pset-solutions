@@ -14,9 +14,11 @@ Problem set 2: In this problem set, I learnt about creating functions in Python,
 
 Problem set 3: In this problem set, I implemented a version of the 6.0001 word game! This game is a lot like Scrabble or Words With Friends. Letters are dealt to players, who then construct one or more words using their letters. Each valid word earns the user points, based on the length of the word and the letters in that word.
 
-Problem set 4: This problem set has two parts. The first part allowed me to practice thinking about problems in a recursive fashion, taking advantage of the idea that one can reduce the problem to a simpler version of the same problem. In ps4a.py, I wrote a recursive function that takes as input a string and figures out all the possible reorderings of the characters in the string. 
+Problem set 4: This problem set has two parts. The first part allowed me to practice thinking about problems in a recursive fashion, taking advantage of the idea that one can reduce the problem to a simpler version of the same problem. In ps4a.py, I wrote a recursive function that takes as input a string and figures out all the possible reorderings of the characters in the string.
 
 The second part gave me experience in thinking about problems in terms of classes, each instance of which contains specific attributes as well as methods for manipulating them. In ps4b.py, I used object-oriented programming to write a Caesar/shift cipher. In ps4c.py , I used object-oriented programming to write a simple substitution cipher.
+
+Problem set 5: In this problem, I used object-oriented programming (classes and inheritance) to build a program to monitor news feeds over the Internet. The program will filter the news, alerting the user when it notices a news story that matches that user's interests (for example, the user may be interested in a notification whenever a story related to the 'Arsenal' is posted)
 
 
 P.S: If anyone is also taking the course and finds my solution useful, feel free to copy the codes to gain clarity on how to solve the problems. 
